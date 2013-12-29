@@ -12,6 +12,31 @@ you can easily automate repetitive tasks, quickly deploy critical
 applications, and proactively manage change, scaling from 10s of 
 servers to 1000s, on-premise or in the cloud
 
+
+# Puppet Architecture 
+
+It's simple client server model as below :
+
+  - Agents nodes/clients
+   - Agent auto-fetch configuration information from master server every 30 minuts default
+	
+  - Master server 
+  	- Master server is also an Agent
+  	- Master server delivers configuration information to Agents nodes.
+  	- Console server - Primary management WebGui, Can be same as Master server instancts, but should be seperated Cloud Provisioner - Permits quick deployment of of new instances. Ex. Vmware, Amazon Web Services
+
+# General Information 
+
+  - Puppet master collects Inventory from nodes (Agents) using "Mcollective" deamon 
+  - Which OSfamily Supports by puppet ?
+    - Redhat/CentOS,Scientific,Oracle
+    - Debian and Ubuntu
+    - Suse
+    - Solaries
+    - Windows ( Limited )
+  - Evaluation Licenses support up to 10-Nodes 
+  - Puppet Master Port : TCP 8140
+
 # The Setup
 
 This Howtos assumes you have following things :
@@ -39,6 +64,8 @@ for all commands (which is recommended) but for simplicity sake root will
 be used here to eliminate confusion.
 
 ````
+cd /usr/local/src/
+wget -cnd "https://pm.puppetlabs.com/cgi-bin/download.cgi?ver=latest&dist=el&arch=x86_64&rel=6"
 tar -xzvf puppet-enterprise-3.1.1-el-6-x86_64.tar.gz
 cd puppet-enterprise-3.1.1-el-6-x86_64
 ````
@@ -103,6 +130,12 @@ Notice: Signed certificate request for ldap.home.local
 Notice: Removing file Puppet::SSL::CertificateRequest ldap.home.local at '/etc/puppetlabs/puppet/ssl/ca/requests/ldap.home.local.pem
 ````
 
+# Verifying Installation
+To verify installation, you just need to run following command :
+
+````
+puppet agent --test
+````
 
 
 
