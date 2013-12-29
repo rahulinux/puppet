@@ -7,10 +7,11 @@ First take look at basic question and understand the concept
 
 Puppet is IT automation software that helps system administrators 
 manage infrastructure throughout its lifecycle, from provisioning 
-and configuration to orchestration and reporting. Using Puppet, 
-you can easily automate repetitive tasks, quickly deploy critical 
-applications, and proactively manage change, scaling from 10s of 
-servers to 1000s, on-premise or in the cloud
+and configuration to orchestration and reporting. you could compare 
+puppet with Active Directory GPO. Using Puppet, you can easily 
+automate repetitive tasks, quickly deploy critical applications, 
+and proactively manage change, scaling from 10s of servers to 1000s, 
+on-premise or in the cloud
 
 
 # Puppet Architecture 
@@ -29,10 +30,11 @@ It's simple client server model as below :
 
   - Puppet master collects Inventory from nodes (Agents) using "Mcollective" deamon 
   - Which OSfamily Supports by puppet ?
-    - Redhat/CentOS,Scientific,Oracle
+    - Redhat/CentOS,Scientific
     - Debian and Ubuntu
     - Suse
-    - Solaries
+    - Oracle Solaries
+    - IBM AIX
     - Windows ( Limited )
   - Evaluation Licenses support up to 10-Nodes 
   - Puppet Master Port : TCP 8140
