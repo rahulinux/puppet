@@ -1,0 +1,39 @@
+{
+  "project_page": "https://github.com/thias/puppet-apache_httpd",
+  "license": "Apache 2.0",
+  "source": "git://github.com/thias/puppet-apache_httpd",
+  "types": [
+
+  ],
+  "description": "Install and enable the Apache httpd web server and manage its\n    configuration with snippets.",
+  "version": "0.4.2",
+  "summary": "Apache HTTP Daemon installation and configuration",
+  "name": "thias-apache_httpd",
+  "author": "Matthias Saou",
+  "checksums": {
+    "templates/conf.d/ssl.conf.orig": "41f59421026a473a0378c58d539069c6",
+    "files/welcome.conf": "127e668bbf50be1ec582418b1b47e5bd",
+    "tests/init.pp": "1caed8c1310cb3eda308ddf7b42dcf9f",
+    "files/trace.inc": "00b0ef3384ae0ae23641de16a4f409c2",
+    "LICENSE": "99219472697a01561e7630d63aaecdc1",
+    "ChangeLog": "0db4a33f6ab2eb9b0ce9a242b895a823",
+    "manifests/file.pp": "8f8a71da792997d0afb1166f5203aa80",
+    "manifests/service/base.pp": "2279d654b21e3bf07fad3019ea1e5169",
+    "Modulefile": "18fc0f67cd149a96ed4662d0751a8f6c",
+    "templates/conf.d/ssl.conf": "187df1d47d7ac4ab6b2abb9624949d9b",
+    "templates/conf/httpd.conf.erb": "4edf27e8e00ab7bc2989042f62ccf585",
+    "manifests/service/ssl.pp": "bccb811431ae834e4e063c417e0b1e38",
+    "manifests/install.pp": "f91474cc2c29623f7f0ec9dcb1d364cf",
+    "README.md": "0c3b8beda12164ae05ebce1f0410546c",
+    "manifests/init.pp": "6aa9d1d12ed8e97ca9f1793a454ce98f",
+    "templates/etc/logrotate.erb": "ab4f8cd53d473c83aa5aff20d726340e",
+    "files/proxy_ajp.conf": "c7d462c30779b0270a141984ad70e70c",
+    "tests/file.pp": "fe34321a9d1997677b02fa20751ab279",
+    "templates/conf/httpd.conf.orig": "27a5c8d9e75351b08b8ca1171e8a0bbd",
+    "templates/etc/sysconfig.erb": "5e16a682e88b07c38a4baab936630e5b",
+    "files/proxy_ajp.conf.orig": "8b0da169a5f7963b6bf28f9d8de7785f"
+  },
+  "dependencies": [
+
+  ]
+}
